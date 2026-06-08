@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Andhra Pradesh Tourism Portal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f8ff;
+overflow-x:hidden;
+}
+
+/* Header */
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+text-shadow:2px 2px 10px #000;
+}
+
+.hero p{
+font-size:22px;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#ffcc00;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+/* Navigation */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#003366;
+padding:15px;
+z-index:999;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+/* Section */
+
+section{
+padding:80px 40px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#003366;
+margin-bottom:40px;
+}
+
+/* District Cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+color:#003366;
+margin-bottom:10px;
+}
+
+/* Godavari Animation */
+
+.godavari{
+height:350px;
+position:relative;
+background:linear-gradient(#4fc3f7,#0288d1);
+overflow:hidden;
+}
+
+.wave{
+position:absolute;
+width:200%;
+height:120px;
+background:rgba(255,255,255,.5);
+border-radius:100%;
+bottom:0;
+animation:wave 10s linear infinite;
+}
+
+.wave:nth-child(2){
+bottom:20px;
+opacity:.5;
+animation-duration:15s;
+}
+
+@keyframes wave{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
+
+.boat{
+position:absolute;
+font-size:60px;
+top:130px;
+animation:boat 12s linear infinite;
+}
+
+@keyframes boat{
+0%{
+left:-100px;
+}
+100%{
+left:110%;
+}
+}
+
+/* Footer */
+
+footer{
+background:#002244;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#districts">Districts</a></li>
+<li><a href="#amaravati">Amaravati</a></li>
+<li><a href="#godavari">Godavari</a></li>
+<li><a href="#food">Food</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header>
+<div class="hero">
+<h1>ANDHRA PRADESH TOURISM</h1>
+<p>Explore Temples • Food • Beaches • Culture • Nature</p>
+<a href="#districts" class="btn">Explore Andhra Pradesh</a>
+</div>
+</header>
+
+<section id="amaravati">
+<h2 class="section-title">Capital Amaravati</h2>
+
+<p style="text-align:center;font-size:18px;">
+Amaravati is the capital region of Andhra Pradesh and is famous for
+Buddhist heritage, Amaralingeswara Temple, Krishna River and modern development.
+</p>
+
+</section>
+
+<section id="districts">
+
+<h2 class="section-title">
+Andhra Pradesh Districts
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86">
+<div class="card-content">
+<h3>East Godavari</h3>
+<p>
+Konaseema, Coconut Gardens,
+Draksharamam Temple,
+Putharekulu Sweet,
+Godavari River.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<div class="card-content">
+<h3>West Godavari</h3>
+<p>
+Bhimavaram,
+Palakollu Temple,
+Kodi Pandalu,
+Aqua Farming,
+Andhra Cuisine.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b">
+<div class="card-content">
+<h3>Visakhapatnam</h3>
+<p>
+RK Beach,
+Kailasagiri,
+Araku Valley,
+INS Kurusura Museum.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce">
+<div class="card-content">
+<h3>Tirupati</h3>
+<p>
+Sri Venkateswara Temple,
+Spiritual Tourism,
+Laddu Prasadam.
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="godavari">
+
+<h2 class="section-title">
+Godavari River Animation
+</h2>
+
+<div class="godavari">
+
+<div class="wave"></div>
+<div class="wave"></div>
+
+<div class="boat">
+🚤
+</div>
+
+</div>
+
+</section>
+
+<section id="food">
+
+<h2 class="section-title">
+Andhra Famous Foods
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-content">
+<h3>Pulihora</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>Pesarattu</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>Gongura Pachadi</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>Putharekulu</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>Pootharekulu</h3>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Farmer Information
+</h2>
+
+<div class="card">
+<div class="card-content">
+
+<h3>Agriculture</h3>
+
+<p>
+Rice, Coconut, Mango,
+Banana, Chilli,
+Aquaculture and Fisheries
+are major sectors of Andhra Pradesh.
+</p>
+
+</div>
+</div>
+
+</section>
+
+<footer id="contact">
+
+<h2>Website Host</h2>
+
+<p><b>MEDISETTI MOHAN PRADEEP</b></p>
+
+<p>Phone: 9542966415</p>
+
+<p>Email: mohanpradeep661@gmail.com</p>
+
+<p>
+© 2026 Andhra Pradesh Tourism Portal
+</p>
+
+</footer>
+
+<script>
+
+document.querySelectorAll('a').forEach(link=>{
+link.addEventListener('click',e=>{
+e.preventDefault();
+document.querySelector(
+link.getAttribute('href')
+).scrollIntoView({
+behavior:'smooth'
+});
+});
+});
+
+</script>
+
+</body>
+</html>
